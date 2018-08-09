@@ -10,3 +10,4 @@ The app includes:
 - Authentication with user registering, login, checking if user already exists
 - Completely functional client panel where you can Add, Modify or Delete (CRUD) clients
 - Settings Component where you can edit settings, which are saved on localStorage
+- PropTypes, Refs, HOC's
