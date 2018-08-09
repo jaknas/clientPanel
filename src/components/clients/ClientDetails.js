@@ -23,6 +23,9 @@ class ClientDetails extends Component {
 			balance: parseFloat(balanceUpdateAmount)
 		};
 
+		if (isNaN(clientUpdate.balance)) {
+			clientUpdate.balance = 0;
+		}
 		// Update in Firestore
 
 		firestore.update({ collection: "clients", doc: client.id }, clientUpdate);

@@ -23,7 +23,7 @@ class AddClient extends Component {
 		const { firestore, history } = this.props;
 
 		// No balance handler
-		if (newClient.balance === "") {
+		if (newClient.balance === "" || isNaN(newClient.balance)) {
 			newClient.balance = 0;
 		}
 

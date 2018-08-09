@@ -20,7 +20,11 @@ class Clients extends Component {
 				return total + parseFloat(client.balance.toString());
 			}, 0);
 
-			return { totalOwed: total };
+			if (isNaN(total)) {
+				return { totalOwed: 0 };
+			} else {
+				return { totalOwed: total };
+			}
 		}
 
 		return null;
