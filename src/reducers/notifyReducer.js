@@ -1,5 +1,4 @@
 import { NOTIFY_USER } from "../actions/types";
-import { actionTypes } from "../../node_modules/redux-firestore";
 
 const initialState = {
 	message: null,
