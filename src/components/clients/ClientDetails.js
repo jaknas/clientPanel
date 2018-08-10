@@ -52,7 +52,6 @@ class ClientDetails extends Component {
 	render() {
 		const { client } = this.props;
 		const { showBalanceUpdate, balanceUpdateAmount } = this.state;
-
 		let balanceForm = "";
 		// If balance form should display
 		if (showBalanceUpdate) {
