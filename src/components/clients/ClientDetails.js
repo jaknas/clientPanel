@@ -15,7 +15,6 @@ class ClientDetails extends Component {
 	// Update balance amount
 	balanceSubmit = e => {
 		e.preventDefault();
-
 		const { client, firestore } = this.props;
 		const { balanceUpdateAmount } = this.state;
 
