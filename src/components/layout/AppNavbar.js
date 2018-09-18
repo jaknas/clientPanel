@@ -6,9 +6,7 @@ import { connect } from "react-redux";
 import { firebaseConnect } from "react-redux-firebase";
 
 class AppNavbar extends Component {
-	state = {
-		isAuthenticated: false
-	};
+	state = { isAuthenticated: false };
 
 	static getDerivedStateFromProps(props, state) {
 		const { auth } = props;
