@@ -36,7 +36,6 @@ class Settings extends Component {
 						</Link>
 					</div>
 				</div>
-
 				<div className="card">
 					<div className="card-header">Edit Settings</div>
 					<div className="card-body">

@@ -14,7 +14,6 @@ class Login extends Component {
 
 	componentWillMount() {
 		const { allowRegistration } = this.props.settings;
-
 		if (!allowRegistration) {
 			this.props.history.push("/");
 		}

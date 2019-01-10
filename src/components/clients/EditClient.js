@@ -19,7 +19,6 @@ class EditClient extends Component {
 
 	onSubmit = e => {
 		e.preventDefault();
-
 		const { client, firestore, history } = this.props;
 
 		// Updated Client

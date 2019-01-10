@@ -15,7 +15,6 @@ class ClientDetails extends Component {
 	// Update balance amount
 	balanceSubmit = e => {
 		e.preventDefault();
-
 		const { client, firestore } = this.props;
 		const { balanceUpdateAmount } = this.state;
 
@@ -52,7 +51,6 @@ class ClientDetails extends Component {
 	render() {
 		const { client } = this.props;
 		const { showBalanceUpdate, balanceUpdateAmount } = this.state;
-
 		let balanceForm = "";
 		// If balance form should display
 		if (showBalanceUpdate) {
